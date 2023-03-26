@@ -124,7 +124,7 @@ public class TTransaction {
 	}
 
 	public String getTransid() {
-		if(transid==null) return java.util.UUID.randomUUID().toString();
+		if(transid==null) transid = java.util.UUID.randomUUID().toString();
 		return transid;
 	}
 
